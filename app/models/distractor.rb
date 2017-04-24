@@ -1,0 +1,3 @@
+class Distractor < ApplicationRecord
+  belongs_to :question
+end
