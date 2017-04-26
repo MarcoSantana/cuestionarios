@@ -19,6 +19,25 @@ RSpec.describe Question, type: :model do
     it { should have_and_belong_to_many :slot }
   end
 
+  describe 'Versioning' do
+    with_versioning do
+      it 'should be on (paper_trail)' do
+        expect(PaperTrail).to be_enabled
+      end
+      it 'should change version' do 
+        expect(@question.body).to eq('Question body text')
+        versioned_question_length = @question.versions.length
+        @question.update_attributes!(body: 'Leonard')
+        expect(@question.body).to eq('Leonard')
+        @question.update_attributes!(body: 'Thomas')
+        expect(@question.body).to eq('Thomas')      
+        @question.update_attributes!(body: 'Robert')
+        expect(@question).to have_a_version_with body: 'Thomas'
+        expect(versioned_question_length).to be < @question.versions.length
+      end
+    end
+  end
+
   describe 'Validations' do
     it "should have notes" do
       should validate_presence_of :notes
