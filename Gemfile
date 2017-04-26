@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 gem "twitter-bootstrap-rails"
 # For user authentication
 gem 'devise'
+# Versioning
+gem 'paper_trail'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

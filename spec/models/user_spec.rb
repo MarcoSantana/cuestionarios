@@ -20,9 +20,7 @@ RSpec.describe User, type: :model do
   end
 
   describe 'Associations' do
-    it 'should have many authorships' do
-      should have_many(:authorships)
-    end
+    pending 'test for authoring in paper_trail'
   end
 
 end

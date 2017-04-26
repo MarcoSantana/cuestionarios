@@ -33,4 +33,8 @@ RSpec.describe Quiz, type: :model do
     pending "should have authors"
     pending 'should have venues'
   end
+
+  describe 'Versioning' do
+    
+  end
 end
