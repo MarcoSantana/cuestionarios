@@ -24,10 +24,20 @@ TODO
 
 * Quiz
     questions (has_many)
+    slots (has many)
     
     paper_trail (or some kind of versioning perhaps self table reference)
-    :body string
+    :description string
     :notes text (try to hide it from standar querying)
     :author (find a gem for this)
+    :application_venues (hm)
+    :passing_grade float 5,2
+    :version ??
+    Must be able to display single questions and sets of multiple questions
+    ( I asume it must be from the existance of the null slot_id)
+
+* Authorship
+    each element of the quiz must have author(s)
+    
 
     

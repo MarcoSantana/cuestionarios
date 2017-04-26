@@ -22,4 +22,12 @@ RSpec.describe Distractor, type: :model do
       should belong_to :question
     end
   end
+
+  describe 'Validations' do
+    it { should validate_presence_of :question}
+    it do should validate_length_of(:body).
+      is_at_least(3).
+      is_at_most(254)
+    end
+  end
 end

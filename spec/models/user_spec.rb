@@ -19,5 +19,10 @@ RSpec.describe User, type: :model do
     expect(@user.last_name).to eq("Kampu Santana")
   end
 
+  describe 'Associations' do
+    it 'should have many authorships' do
+      should have_many(:authorships)
+    end
+  end
 
 end
