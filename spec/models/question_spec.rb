@@ -40,10 +40,10 @@ RSpec.describe Question, type: :model do
   end
 
   describe 'Validations' do
-    it "should have notes" do
+    it 'should have notes' do
       should validate_presence_of :notes
     end
-    it "sould have a body" do
+    it 'sould have a body' do
       should validate_presence_of :body
     end
     it 'should have a valid body' do
