@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 #For frontend
 gem 'bower-rails'
+gem 'foundation-rails'
 
 # For user authentication
 gem 'devise'

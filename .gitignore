@@ -23,3 +23,10 @@
 # Ignore rubymine files
 .idea/*
 .idea
+.idea/.generators
+
+.idea/.generators
+
+.idea/cuestionarios.iml
+
+.idea/workspace.xml
