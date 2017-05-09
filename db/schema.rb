@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20170426171920) do
     t.integer  "question_id"
     t.text     "body"
     t.text     "notes"
+    t.boolean  "correct"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["question_id"], name: "index_distractors_on_question_id"

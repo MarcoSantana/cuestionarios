@@ -19,13 +19,13 @@ class QuestionsController < ApplicationController
 
   # GET /questions/1/edit
   def edit
+    @question.distractors.build
   end
 
   # POST /questions
   # POST /questions.json
   def create
     @question = Question.new(question_params)
-
     respond_to do |format|
       if @question.save
         format.html { redirect_to @question, notice: 'Question was successfully created.' }
@@ -70,5 +70,6 @@ class QuestionsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def question_params
       params.fetch(:question, {})
+      params.require(:question).permit(:body, :notes, distractors_attributes: [:question_id, :body, :_destroy])
     end
 end

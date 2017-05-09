@@ -17,7 +17,7 @@ RSpec.describe Question, type: :model do
   describe 'Associations' do
     it { should have_many :distractors}
     it { should have_and_belong_to_many :slot }
-    pending 'should not be deleted alogn with slots'
+    #pending 'should not be deleted along with slots'
   end
 
   describe 'Versioning' do

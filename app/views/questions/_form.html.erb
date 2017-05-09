@@ -1,3 +1,4 @@
+<div class="row">
 <%= form_for(question) do |f| %>
   <% if question.errors.any? %>
     <div id="error_explanation">
@@ -10,8 +11,22 @@
       </ul>
     </div>
   <% end %>
+      <p>
+        Body: <%= f.text_field :body %>
+      </p>
+    <p>
+      Notes: <%= f.text_field :notes %>
+    </p>
+    <p>
+      Distractors
+    </p>
+    <hr>
+    <div class="distractors">
 
+    </div>
   <div class="actions">
+    <%= link_to_add_association('Add distractor', f, :distractors) %>
     <%= f.submit %>
   </div>
 <% end %>
+</div>

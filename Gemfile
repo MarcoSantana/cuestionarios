@@ -34,6 +34,9 @@ gem 'jbuilder', '~> 2.5'
 #For frontend
 gem 'bower-rails'
 gem 'foundation-rails'
+# For nested forms
+gem 'cocoon'
+
 
 # For user authentication
 gem 'devise'
@@ -52,8 +55,15 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'shoulda'
   gem 'shoulda-matchers'
+  gem 'capybara'
   gem 'database_cleaner'
   gem 'faker', '~>1.7.3'
+end
+
+group :test do
+  gem 'cucumber'
+  gem 'cucumber-rails', require: false
+  gem 'selenium-webdriver'
 end
 
 group :development do

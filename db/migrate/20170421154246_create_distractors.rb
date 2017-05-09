@@ -4,6 +4,7 @@ class CreateDistractors < ActiveRecord::Migration[5.0]
       t.belongs_to :question, index: true
       t.text    :body
       t.text    :notes
+      t.boolean :correct
       t.timestamps
     end
   end

@@ -11,4 +11,6 @@ RSpec.describe "questions/index", type: :view do
   it "renders a list of questions" do
     render
   end
+
+
 end

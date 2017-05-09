@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Rails cuestionarios: test" uuid="10fa4770-9d03-4f16-8897-c2f74081b8aa">
+    <data-source source="LOCAL" name="Rails cuestionarios: cucumber" uuid="ec7863b2-29ad-4293-b13a-6ccc1e6b8336">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
@@ -12,7 +12,18 @@
         <property name="enable_load_extension" value="true" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="Rails cuestionarios: development" uuid="0fa9f989-0a17-42ae-b3f2-04af19c29460">
+    <data-source source="LOCAL" name="Rails cuestionarios: test" uuid="12c0b990-f849-423d-a9a0-a1387e56050d">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="Rails cuestionarios: development" uuid="c415da1c-c0f5-4b44-bf00-163326e99d63">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>

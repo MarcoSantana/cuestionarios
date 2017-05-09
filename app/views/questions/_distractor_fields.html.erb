@@ -1,0 +1,5 @@
+  <div class="nested-fields form-control">
+        <%= f.text_field :body, class: "distractor_body" %>
+        <%= f.radio_button :correct, 'true', label: true%>
+      <%= link_to_remove_association "Delete distractor", f%>
+  </div>
