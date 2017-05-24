@@ -17,4 +17,5 @@ Feature: List existing questions
     Then I click the 'delete distractor' link
     Then I click on the 'Create Question' button
     Then I should see the "New question body text" question, with "New question notes" notes
-    Then I click on the "back" link to see the new question with its distractors
+    # Then I click on the "back" link to see the new question with its distractors
+    Then I go back and should see the question with body "New question body text" and a distractor with body "Option A)"

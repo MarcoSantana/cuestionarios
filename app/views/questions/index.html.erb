@@ -4,29 +4,28 @@
 <table>
   <thead>
     <tr>
-      <th colspan="3"></th>
+      <th colspan="3">Questions</th>
     </tr>
   </thead>
 
   <tbody>
-  <th>
     <% @questions.each do |question| %>
-  </th>
       <tr>
-        <td><%= question.body %></td>
+          <td>
+              <div>
+                  <%= question.body %>
+              </div>
+              <div class="distractors">
+                  <% question.distractors.each do |distractor| %>
+                      <div id=" <%= dom_id(distractor) %>" class="distractor">
+                          <%= distractor.body %>
+                      </div>
+                  <% end %>
+              </div>
+          </td>
         <td><%= link_to 'Show', question %></td>
         <td><%= link_to 'Edit', edit_question_path(question) %></td>
         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-      <tr>
-        <td>
-         <% question.distractors.each do |distractor| %>
-          <td>
-            <%= distractor.body  %>
-            <span class="badge"><%= distractor.correct %></span>
-          </td>
-         <% end %>
-        </td>
       </tr>
     <% end %>
   </tbody>

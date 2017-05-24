@@ -30,3 +30,6 @@
 .idea/cuestionarios.iml
 
 .idea/workspace.xml
+
+#Ignore vim swap files
+*.sw*

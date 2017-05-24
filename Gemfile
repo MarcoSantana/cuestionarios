@@ -56,7 +56,6 @@ group :development, :test do
   gem 'shoulda'
   gem 'shoulda-matchers'
   gem 'capybara'
-  gem 'database_cleaner'
   gem 'faker', '~>1.7.3'
 end
 
@@ -64,6 +63,7 @@ group :test do
   gem 'cucumber'
   gem 'cucumber-rails', require: false
   gem 'selenium-webdriver'
+  gem 'database_cleaner'
 end
 
 group :development do

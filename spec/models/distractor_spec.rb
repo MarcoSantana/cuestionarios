@@ -15,10 +15,6 @@ RSpec.describe Distractor, type: :model do
     @distractor.body = nil
     expect(@distractor).to_not be_valid
   end
-  it 'should not be valid without notes' do
-    @distractor.notes = nil
-    expect(@distractor).to_not be_valid
-  end
 
   describe 'Associations' do
     it 'should belong to question' do
